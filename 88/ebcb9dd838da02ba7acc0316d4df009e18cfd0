@@ -1,0 +1,14 @@
+dist/index.html
+  h_2c303d13c1af0a 177
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "88ebcb9dd838da02ba7acc0316d4df009e18cfd0",
+  "prompts": {},
+  "humans": {
+    "h_2c303d13c1af0a": {
+      "author": "Riccardo Pala <r.pala@reply.it>"
+    }
+  }
+}
