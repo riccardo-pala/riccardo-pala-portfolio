@@ -305,14 +305,7 @@ h2 em { color: #59799e; font-weight: 700; }
 .experience-card { display: flex; flex-direction: column; }
 .experience-companies { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 9px; }
 .employer-brand { min-width: 0; display: inline-flex; align-items: center; gap: 8px; color: #244f72; font-size: 12px; font-weight: 800; letter-spacing: -.02em; }
-.employer-brand img { width: 29px; height: 29px; flex: 0 0 29px; border-radius: 5px; object-fit: cover; }
-.experience-brand { display: inline-flex; align-items: center; align-self: auto; flex: 0 0 auto; gap: 7px; min-height: 29px; margin: 0; padding: 3px 9px 3px 4px; border: 1px solid currentColor; border-radius: 7px; font-weight: 850; line-height: 1; }
-.experience-brand img { width: 25px; height: 25px; flex: 0 0 25px; border-radius: 4px; object-fit: cover; }
-.experience-brand .brand-name { font-size: 14px; letter-spacing: -.04em; }
-.widiba-brand { color: #a8234d; background: #fff0f4; border-color: #efc4d2; }
-.bper-brand { color: #12634a; background: #effaf3; border-color: #bfdfc9; }
-.bper-brand small { color: #278151; font-size: 8px; letter-spacing: .01em; }
-.experience-brand + h3 { margin-top: 8px; }
+.experience-domain { color: #57718c; font-size: 10px; font-weight: 700; text-align: right; }
 .experience-meta { display: flex; align-items: center; justify-content: space-between; color: #496a8a; font-size: 10px; font-weight: 800; letter-spacing: .1em; }
 .experience-index, .credential-number { display: inline-grid; width: 28px; height: 28px; place-items: center; border: 1px solid #c8d8ec; border-radius: 8px; background: #edf4ff; color: var(--blue-deep); font-size: 10px; font-weight: 900; letter-spacing: 0; }
 .experience-card h3 { margin: 15px 0 5px; color: #14263f; font-size: clamp(17px, 2vw, 22px); font-weight: 850; letter-spacing: -.035em; line-height: 1.2; }
@@ -387,10 +380,7 @@ h2 em { color: #59799e; font-weight: 700; }
 @media (max-width: 430px) {
   .experience-companies { gap: 6px; }
   .employer-brand { gap: 5px; font-size: 10px; }
-  .employer-brand img { width: 25px; height: 25px; flex-basis: 25px; }
-  .experience-brand { gap: 4px; padding-right: 5px; }
-  .experience-brand img { width: 21px; height: 21px; flex-basis: 21px; }
-  .experience-brand .brand-name { font-size: 12px; }
+  .experience-domain { max-width: 48%; }
 }
 
 /* Small type lift for longer descriptions; hierarchy and component sizing stay intact. */
