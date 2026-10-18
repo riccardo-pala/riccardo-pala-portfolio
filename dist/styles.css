@@ -305,6 +305,7 @@ h2 em { color: #59799e; font-weight: 700; }
 .experience-card { display: flex; flex-direction: column; }
 .experience-companies { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 9px; }
 .employer-brand { min-width: 0; display: inline-flex; align-items: center; gap: 8px; color: #244f72; font-size: 12px; font-weight: 800; letter-spacing: -.02em; }
+.employer-brand img { width: 29px; height: 29px; flex: 0 0 29px; border-radius: 5px; object-fit: cover; }
 .experience-domain { color: #57718c; font-size: 10px; font-weight: 700; text-align: right; }
 .experience-meta { display: flex; align-items: center; justify-content: space-between; color: #496a8a; font-size: 10px; font-weight: 800; letter-spacing: .1em; }
 .experience-index, .credential-number { display: inline-grid; width: 28px; height: 28px; place-items: center; border: 1px solid #c8d8ec; border-radius: 8px; background: #edf4ff; color: var(--blue-deep); font-size: 10px; font-weight: 900; letter-spacing: 0; }
@@ -380,6 +381,7 @@ h2 em { color: #59799e; font-weight: 700; }
 @media (max-width: 430px) {
   .experience-companies { gap: 6px; }
   .employer-brand { gap: 5px; font-size: 10px; }
+  .employer-brand img { width: 25px; height: 25px; flex-basis: 25px; }
   .experience-domain { max-width: 48%; }
 }
 
