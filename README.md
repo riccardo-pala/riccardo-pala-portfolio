@@ -1,6 +1,6 @@
 # Riccardo Pala — Portfolio
 
-Portfolio personale di Riccardo Pala, Software Engineer. Presenta esperienze, competenze, formazione e progetti in italiano, inglese e spagnolo.
+Portfolio personale di Riccardo Pala, Software & AI Engineer. Presenta esperienze, competenze, formazione e progetti in italiano, inglese e spagnolo.
 
 **[Apri il portfolio](https://riccardo-pala.github.io/riccardo-pala-portfolio/)** · [LinkedIn](https://www.linkedin.com/in/riccardo-pala/) · [Email](mailto:riccardo.pala98@outlook.it)
 
@@ -9,7 +9,7 @@ Portfolio personale di Riccardo Pala, Software Engineer. Presenta esperienze, co
 - Profilo professionale orientato a backend Java/Spring, sistemi distribuiti e AI applicata.
 - Selezione di progetti personali con repository e, per MuSeek e Financial RAG Assistant, gallerie consultabili dal browser.
 - Formazione, pubblicazione ACM RecSys 2022 e certificazione Confluent Certified Developer for Apache Kafka.
-- Curriculum AI in formato HTML, accessibile dalla sezione iniziale del sito.
+- Curriculum PDF in formato leggibile dai recruiter, accessibile dalla sezione iniziale del sito.
 
 ## Progetti in evidenza
 
@@ -40,10 +40,10 @@ I file principali sono `dist/index.html`, `dist/styles.css`, `dist/app.js` e `di
 
 ## English
 
-Personal portfolio of Riccardo Pala, Software Engineer. It presents professional experience, skills, education and selected projects in Italian, English and Spanish.
+Personal portfolio of Riccardo Pala, Software & AI Engineer. It presents professional experience, skills, education and selected projects in Italian, English and Spanish.
 
 **[View the portfolio](https://riccardo-pala.github.io/riccardo-pala-portfolio/)** · [LinkedIn](https://www.linkedin.com/in/riccardo-pala/) · [Email](mailto:riccardo.pala98@outlook.it)
 
-The site is a static HTML, CSS and JavaScript project, with project metadata in JSON. It includes selected project repositories, browser galleries for MuSeek and Financial RAG Assistant, education, research, the Confluent Certified Developer for Apache Kafka credential, and an HTML resume.
+The site is a static HTML, CSS and JavaScript project, with project metadata in JSON. It includes selected project repositories, browser galleries for MuSeek and Financial RAG Assistant, education, research, the Confluent Certified Developer for Apache Kafka credential, and a PDF resume.
 
 To preview it locally, run `python3 -m http.server 8000 --directory dist` from the repository root and open `http://localhost:8000`. GitHub Actions deploys `dist/` to GitHub Pages on every push to `main`.

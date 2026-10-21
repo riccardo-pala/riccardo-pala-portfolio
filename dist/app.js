@@ -14,9 +14,9 @@ const labels = {
 };
 const languageNames = { it: "Italiano", en: "English", es: "Español" };
 const pageTitles = {
-  it: "Riccardo Pala — Software Engineer",
-  en: "Riccardo Pala — Software Engineer",
-  es: "Riccardo Pala — Ingeniero de software"
+  it: "Riccardo Pala — Software & AI Engineer",
+  en: "Riccardo Pala — Software & AI Engineer",
+  es: "Riccardo Pala — Ingeniero de software e IA"
 };
 const localized = (project, field) => language === "it" ? project[field] : project[`${field}${language === "en" ? "En" : "Es"}`];
 
