@@ -62,7 +62,7 @@ function renderProjects() {
         <span class="visual-index">0${projects.indexOf(project) + 1}</span>
       </div>
       <div class="project-info">
-        <div class="project-meta"><span>${localized(project, "category") || (language === "it" ? project.category : project.categoryEn)}</span><span>${labels[language].selected}</span></div>
+        <div class="project-meta"><span>${localized(project, "category") || (language === "it" ? project.category : project.categoryEn)}</span><span class="${project.status ? "project-status" : ""}">${localized(project, "status") || labels[language].selected}</span></div>
         <h3>${project.title}</h3>
         <p class="project-subtitle">${localized(project, "subtitle") || (language === "it" ? project.subtitle : project.subtitleEn)}</p>
         <p class="project-description">${localized(project, "description") || (language === "it" ? project.description : project.descriptionEn)}</p>
@@ -122,7 +122,7 @@ document.addEventListener("keydown", event => {
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 if (["it", "en", "es"].includes(requestedLanguage)) setLanguage(requestedLanguage);
 
-fetch("projects.json")
+fetch("projects.json?v=20261025-kairos")
   .then(response => {
     if (!response.ok) throw new Error("Unable to load project data");
     return response.json();

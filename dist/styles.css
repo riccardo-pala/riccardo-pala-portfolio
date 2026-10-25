@@ -83,6 +83,9 @@ h2 em { color: #8d9690; font-weight: 500; }
 .featured .project-info { padding: 38px clamp(28px, 4.5vw, 62px); display: flex; flex-direction: column; justify-content: center; }
 .project-meta { display: flex; justify-content: space-between; gap: 8px; color: #7b847c; font: 8px var(--mono); letter-spacing: .07em; text-transform: uppercase; }
 .project-meta span:last-child { color: #a4aaa3; }
+.project-meta .project-status { padding: 4px 7px; border-radius: 999px; background: var(--green); color: var(--ink); font-size: 7px; letter-spacing: .06em; }
+.visual-kairos { background: #e9e6de; }
+.visual-kairos .project-cover { object-fit: contain; padding: 28px; }
 .project-info h3 { margin: 21px 0 6px; font-size: clamp(22px, 2.5vw, 31px); font-weight: 600; letter-spacing: -.06em; line-height: 1.1; }
 .project-subtitle { margin: 0 0 15px; color: #4f5953; font-size: 12px; font-weight: 700; line-height: 1.6; }
 .project-description { max-width: 530px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
@@ -398,3 +401,6 @@ h2 em { color: #59799e; font-weight: 700; }
 .credential-card > p { font-size: 12px; }
 .certification-dates { font-size: 11px; }
 .language-item > span:last-child { font-size: 11px; }
+
+/* The featured project's development status stays distinct from its category. */
+.project-meta span.project-status { padding: 5px 9px; border-radius: 999px; background: #b8f26b; color: #172942; font: 800 9px var(--sans); letter-spacing: .06em; white-space: nowrap; }
