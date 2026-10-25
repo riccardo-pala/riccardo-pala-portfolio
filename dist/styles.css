@@ -84,8 +84,9 @@ h2 em { color: #8d9690; font-weight: 500; }
 .project-meta { display: flex; justify-content: space-between; gap: 8px; color: #7b847c; font: 8px var(--mono); letter-spacing: .07em; text-transform: uppercase; }
 .project-meta span:last-child { color: #a4aaa3; }
 .project-meta .project-status { padding: 4px 7px; border-radius: 999px; background: var(--green); color: var(--ink); font-size: 7px; letter-spacing: .06em; }
-.visual-kairos { background: #e9e6de; }
-.visual-kairos .project-cover { object-fit: contain; padding: 28px; }
+.visual-kairos { background: radial-gradient(circle at 82% 18%, rgba(116, 82, 255, .42), transparent 34%), linear-gradient(135deg, #03b9ee 0%, #0877cf 68%, #2055b5 100%); }
+.visual-kairos::before { position: absolute; z-index: 0; top: 50%; left: 50%; width: min(76%, 340px); aspect-ratio: 1; border: 1px solid rgba(255, 255, 255, .78); border-radius: 24px; background: rgba(246, 251, 255, .96); box-shadow: 0 14px 36px rgba(10, 37, 75, .23); content: ""; transform: translate(-50%, -50%); }
+.visual-kairos .project-cover { z-index: 1; object-fit: contain; padding: 28px; }
 .project-info h3 { margin: 21px 0 6px; font-size: clamp(22px, 2.5vw, 31px); font-weight: 600; letter-spacing: -.06em; line-height: 1.1; }
 .project-subtitle { margin: 0 0 15px; color: #4f5953; font-size: 12px; font-weight: 700; line-height: 1.6; }
 .project-description { max-width: 530px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
@@ -289,6 +290,7 @@ h2 em { color: #59799e; font-weight: 700; }
   .projects-section { margin-top: 28px; }.section-heading { align-items: flex-start; flex-direction: column; gap: 7px; }.section-heading h2 { font-size: clamp(26px, 7.5vw, 34px); }.section-note { max-width: 100%; margin: 0; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card.featured { display: block; }.project-card.featured .project-visual { min-height: 245px; border-radius: 15px 15px 0 0; }.project-card.featured .project-info { padding: 22px; }
+  .visual-kairos::before { width: min(70%, 205px); border-radius: 20px; }
   .profile-section { padding: 28px 0; }.profile-layout { grid-template-columns: 1fr; gap: 16px; padding: 24px 20px; border-radius: 16px; }.profile-heading h2 { font-size: clamp(34px, 8.8vw, 48px); }
   .contact-section { width: calc(100% - 36px); padding: 30px 19px 34px; margin-bottom: 22px; border-radius: 16px; }.contact-section h2 { font-size: clamp(34px, 8.5vw, 48px); }.site-footer .shell { min-height: 90px; }
 }
