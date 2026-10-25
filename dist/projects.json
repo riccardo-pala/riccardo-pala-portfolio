@@ -1,7 +1,7 @@
 [
   {
     "id": "kairos",
-    "category": "AI e produttività",
+    "category": "AI & produttività",
     "categoryEn": "AI & productivity",
     "categoryEs": "IA y productividad",
     "status": "IN SVILUPPO",
@@ -59,8 +59,8 @@
   },
   {
     "id": "pricing-bandits",
-    "category": "Algorithms",
-    "categoryEn": "Algorithms",
+    "category": "Online Learning Application",
+    "categoryEn": "Online Learning Application",
     "year": "",
     "title": "Pricing Optimization",
     "subtitle": "Prezzi e raccomandazioni in un ambiente incerto.",
@@ -80,7 +80,7 @@
     "subtitleEs": "Precios y recomendaciones en un entorno incierto.",
     "descriptionEs": "Simulador y algoritmos para un comercio electrónico con precios dinámicos y productos recomendados. Explora estrategias greedy, UCB y Thompson Sampling, también con demanda no estacionaria y generación de contextos.",
     "focusEs": "Bandidos multiarmados · UCB · Thompson Sampling",
-    "categoryEs": "Algoritmos"
+    "categoryEs": "Online Learning Application"
   },
   {
     "id": "museek",
