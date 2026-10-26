@@ -122,7 +122,7 @@ document.addEventListener("keydown", event => {
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 if (["it", "en", "es"].includes(requestedLanguage)) setLanguage(requestedLanguage);
 
-fetch("projects.json?v=20261026-pricing-category")
+fetch("projects.json?v=20261027-kairos-subtitle")
   .then(response => {
     if (!response.ok) throw new Error("Unable to load project data");
     return response.json();
