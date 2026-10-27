@@ -28,7 +28,8 @@
     ],
     "repo": "https://github.com/riccardo-pala/kairos",
     "visual": "kairos",
-    "cover": "assets/kairos-logo.png"
+    "cover": "assets/kairos-logo.png",
+    "demo": "https://riccardo-pala.github.io/kairos/"
   },
   {
     "id": "financial-rag",

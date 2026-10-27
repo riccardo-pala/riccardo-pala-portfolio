@@ -8,9 +8,9 @@ let activeFilter = "all";
 let projects = [];
 
 const labels = {
-  it: { all: "Tutti", repo: "Esplora il repository", cv: "Dettagli nel CV", selected: "PROGETTO PERSONALE", filters: "Filtra i progetti", gallery: "Guarda le schermate" },
-  en: { all: "All", repo: "Explore repository", cv: "More details in CV", selected: "PERSONAL PROJECT", filters: "Filter projects", gallery: "View screenshots" },
-  es: { all: "Todos", repo: "Explorar repositorio", cv: "Más detalles en el CV", selected: "PROYECTO PERSONAL", filters: "Filtrar proyectos", gallery: "Ver capturas" }
+  it: { all: "Tutti", repo: "Esplora il repository", cv: "Dettagli nel CV", selected: "PROGETTO PERSONALE", filters: "Filtra i progetti", gallery: "Guarda le schermate", demo: "Apri la demo" },
+  en: { all: "All", repo: "Explore repository", cv: "More details in CV", selected: "PERSONAL PROJECT", filters: "Filter projects", gallery: "View screenshots", demo: "Open the demo" },
+  es: { all: "Todos", repo: "Explorar repositorio", cv: "Más detalles en el CV", selected: "PROYECTO PERSONAL", filters: "Filtrar proyectos", gallery: "Ver capturas", demo: "Abrir la demo" }
 };
 const languageNames = { it: "Italiano", en: "English", es: "Español" };
 const pageTitles = {
@@ -68,7 +68,7 @@ function renderProjects() {
         <p class="project-description">${localized(project, "description") || (language === "it" ? project.description : project.descriptionEn)}</p>
         <p class="project-focus">${localized(project, "focus") || (language === "it" ? project.focus : project.focusEn)}</p>
         <div class="tag-list">${project.stack.map(tag => `<span>${tag}</span>`).join("")}</div>
-        <div class="project-actions">${project.gallery ? `<a class="project-demo" href="${project.gallery}?lang=${language}"><span>${labels[language].gallery}</span><span aria-hidden="true">↗</span></a>` : ""}<a class="project-link" href="${project.repo}" target="_blank" rel="noreferrer"><span>${localized(project, "repoLabel") || (language === "it" ? project.repoLabel || labels[language].repo : project.repoLabelEn || labels[language].repo)}</span><span aria-hidden="true">↗</span></a></div>
+        <div class="project-actions">${project.demo ? `<a class="project-demo" href="${project.demo}" target="_blank" rel="noreferrer"><span>${labels[language].demo}</span><span aria-hidden="true">↗</span></a>` : ""}${project.gallery ? `<a class="project-demo" href="${project.gallery}?lang=${language}"><span>${labels[language].gallery}</span><span aria-hidden="true">↗</span></a>` : ""}<a class="project-link" href="${project.repo}" target="_blank" rel="noreferrer"><span>${localized(project, "repoLabel") || (language === "it" ? project.repoLabel || labels[language].repo : project.repoLabelEn || labels[language].repo)}</span><span aria-hidden="true">↗</span></a></div>
       </div>
     </article>`).join("");
 }
@@ -122,7 +122,7 @@ document.addEventListener("keydown", event => {
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 if (["it", "en", "es"].includes(requestedLanguage)) setLanguage(requestedLanguage);
 
-fetch("projects.json?v=20261027-kairos-subtitle")
+fetch("projects.json?v=20261027-kairos-demo")
   .then(response => {
     if (!response.ok) throw new Error("Unable to load project data");
     return response.json();
